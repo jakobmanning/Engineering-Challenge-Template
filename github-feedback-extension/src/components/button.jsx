@@ -26,9 +26,9 @@ export const ButtonContainer = styled.div`
     }
 `;
 
-export const Button = ({ primary, onClick, disabled, ...rest }) => {
+export const Button = ({ primary, onClick, ...rest }) => {
     return (
-        <ButtonStyled type="button" onClick={onClick} primary={primary} disabled={disabled}>
+        <ButtonStyled type="button" onClick={onClick} primary={primary}>
             {rest.children}
         </ButtonStyled>
     );
